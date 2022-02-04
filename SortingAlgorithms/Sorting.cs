@@ -51,14 +51,22 @@ public class Sorting
         for (int i = 1; i < arr.Length; i++)
         {
             int current = arr[i];
+            bool ins = false;
             for (int j = 0; j < list.Count; j++)
             {
                 if (current < list[j])
                 {
                     list.Insert(j,current);
+                    ins = true;
                     break;
                 }
             }
+
+            if (!ins)
+            {
+                list.Insert(list.Count, current);
+            }
+            
         }
 
         return list.ToArray();

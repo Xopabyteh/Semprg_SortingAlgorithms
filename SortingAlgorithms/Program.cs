@@ -5,17 +5,8 @@
 const int length = 6;
 
 Utils.PrintArray(Sorting.BoubleSort(Utils.RandomArray(length)));
-
-Console.WriteLine();
-
 Utils.PrintArray(Sorting.InsertionSort(Utils.RandomArray(length)));
-
-Console.WriteLine();
-
 Utils.PrintArray(Sorting.SelectionSort(Utils.RandomArray(length)));
-
-Console.WriteLine();
-
 //Utils.PrintArray(Sorting.BozoSort(Utils.RandomArray(length))));
 
 /*
